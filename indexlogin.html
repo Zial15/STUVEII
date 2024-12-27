@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student survey</title>
+
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+ <!-- feather icon -->
+ <script src="https://unpkg.com/feather-icons"></script>
+ <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+ <!-- my style -->
+    <link rel="stylesheet" type="text/css" href="stylelogin.css">
+</head>
+<body>
+    <section class="hero" id="home">
+        <div class="wrapper">
+            <main class="content">
+                <h1>Welcome to Stuvei.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, omnis?</p>
+            </main>
+    
+            <!-- LOGIN SECTION -->
+            <section id="login">
+                <h2>Login</h2>
+                <form action="login_process.php" method="POST">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Login as:</label>
+                        <select id="role" name="role" required>
+                            <option value="surveiyor">Surveiyor</option>
+                            <option value="responden">Responden</option>
+                        </select>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </section>
+            <!-- END LOGIN SECTION -->
+        </div>
+    </section>
+    <!-- navbar start -->
+     <nav class="navbar">
+        <a href="#" class="navbar-logo">
+        <img src="img/stuveii.png">
+    </a>
+
+        <div class="navbar-nav">
+            <a href="#">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">service</a>
+            <a href="#contact">contact</a>
+            <button class="btnLogin-popup">login</button>
+        </div>
+
+        <div class="navbar-extra">
+            <a href="#" id=""><i data-feather=""></i></a>
+            <a href="#" id=""><i data-feather=""></i></a>
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+
+        <!-- search from start-->
+         <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box"><i data-feather="search"></i></label>
+         </div>
+        </nav>
+        <!-- search from end-->
+
+     <!-- navbar end -->
+
+     <!--hero section start-->
+     <section class="hero" id="home">
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close-outline"></ion-icon>
+            </span>
+            <div class="logreg-box">
+                <!-- Login form -->
+                <div class="form-box login">
+                    <div class="logreg-title">
+                        <h2>Login</h2>
+                        <p>please login to use the platform</p>
+                    </div>
+
+                    <form action="index.html" method="get">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+
+                        <div class="remember-forgot">
+                            <label><input type="checkbox"> Remember me</label>
+                            <a href="#">Forgot password?</a>
+                        </div>
+
+                        <button type="submit" class="btn">Login</button>
+
+                        <div class="logreg-link">
+                            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- register form -->
+                <div class="form-box register">
+                    <div class="logreg-title">
+                        <h2>Registration</h2>
+                        <p>please provide the following to verify your identity</p>
+                    </div>
+
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                            <input type="text" required>
+                            <label>Username</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+
+                        <div class="remember-forgot">
+                            <label><input type="checkbox"> I agree to the terms & conditions</label>
+                        </div>
+
+                        <button type="submit" class="btn">Register</button>
+
+                        <div class="logreg-link">
+                            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="media-options">
+                <a href="#">
+                    <ion-icon name="logo-google"></ion-icon>
+                    <span>Login with Google</span>
+                </a>
+            </div>
+        </div>
+        <main class="content">
+            <h1>Welcome to Stuvei.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, omnis?</p>
+        </main>
+        
+     </section>
+     <!--hero section end-->
+
+
+    <!-- feather icon -->
+    <script>
+        feather.replace();
+      </script>
+
+      <!-- my javascript -->
+       <script src="js/scriptlogin.js"></script>
+</body>
+
+</html>
